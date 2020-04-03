@@ -1,13 +1,21 @@
-# Machine-Learning-Exploring---AssignmentNr2
+# Machine-Learning-Exploring
+## Used Datasets:
+**MNIST dataset:**
+You can get the MNIST dataset in one of the following ways.
+1. Link to Data in csv format:
+https://www.openml.org/data/get_csv/52667/mnist_784.arff
+2. Data using Scikit-learn:
+`from sklearn.datasets import fetch_openml
+mnist = fetch_openml(’mnist_784’, version=1)`
 
-## Question 1: Grid search, KNN, SVM and Ensembles
+### Question 1: Grid search, KNN, SVM and Ensembles
 1. Using grid search and your selected metric, find the best hyperparameters for two models: SVM and
 KNN. Briefly describe how you selected the hyperparameters and their values for grid search.
 2. Combine the SVM, KNN with the best parameters, and a decision tree model with default parameters,
 into a voting classifier. Evaluate its performance.
 3. Train a random forest model and evaluate its performance
 
-## Question 2: Clustering [Optional]
+### Question 2: Clustering [Optional]
 1. Select a continuous variable in the dataset and cluster its values. Use any two clustering methods (k-
 means, agglomerative, DBSCAN etc.). For each method, explain how you chose clustering parameters
 (e.g., the number of clusters, linkage type etc. as appropriate for the algorithm).
@@ -15,7 +23,7 @@ means, agglomerative, DBSCAN etc.). For each method, explain how you chose clust
 variable should be clustered using one of the clustering methods you implemented in q. 2a. Is the
 performance of these models different from the original model?
 
-## Question 4: PCA
+### Question 4: PCA
 1. Load the MNIST dataset and split it into a training set and a test set (take the first 60,000 instances for
 training, and the remaining 10,000 for testing). Train a Random Forest classifier on the dataset and
 time how long it takes, then evaluate the resulting model on the test set.
