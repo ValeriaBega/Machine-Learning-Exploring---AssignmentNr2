@@ -5,8 +5,18 @@ You can get the MNIST dataset in one of the following ways.
 1. Link to Data in csv format:
 https://www.openml.org/data/get_csv/52667/mnist_784.arff
 2. Data using Scikit-learn:
-`from sklearn.datasets import fetch_openml
-mnist = fetch_openml(’mnist_784’, version=1)`
+`from sklearn.datasets import fetch_openml`
+`mnist = fetch_openml(’mnist_784’, version=1)`
+
+**Olivetti faces dataset:**
+You can get the Olivetti faces dataset in one of the following ways.
+1. Data:
+https://cs.nyu.edu/~roweis/data/olivettifaces.mat
+Images:
+https://cs.nyu.edu/~roweis/data/olivettifaces.gif
+2. Data using Scikit-learn:
+`from sklearn.datasets import fetch_olivetti_faces`
+`olivetti = fetch_olivetti_faces()`
 
 ### Question 1: Grid search, KNN, SVM and Ensembles
 1. Using grid search and your selected metric, find the best hyperparameters for two models: SVM and
